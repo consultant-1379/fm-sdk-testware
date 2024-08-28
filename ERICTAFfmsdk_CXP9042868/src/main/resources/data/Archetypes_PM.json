@@ -1,0 +1,91 @@
+{
+  "pm-mediation-snmp-archetype": {
+    "_targets": {
+      "models": [
+        "${artifactId}/${packageName}model${cxpNumber}/target/rpm/${packageName}model_${cxpNumber}/RPMS/noarch"
+      ],
+      "uninstall": [
+      ]
+    },
+    "archetypeGroupId": "com.ericsson.oss.mediation.pm",
+    "archetypeArtifactId": "pm-mediation-snmp-archetype",
+    "artifactId": "pmsdkexample-pm-mediation-snmp-model",
+    "archetypeVersion": "RELEASE",
+    "cxpNumber": "CXP12345679",
+    "packageName": "ERICpmsdkexamplepmmediationsnmp",
+    "nodeType": "PMSDKEXAMPLE",
+    "version": "1.0.1"
+  },
+  "pm-mediation-snmp-configuration-archetype": {
+    "_targets": {
+      "models": [
+        "${artifactId}/${packageName}_${cxpNumber}/target/rpm/${packageName}_${cxpNumber}/RPMS/noarch"
+      ],
+      "uninstall": [
+      ]
+    },
+    "archetypeGroupId": "com.ericsson.oss.mediation.pm",
+    "archetypeArtifactId": "pm-mediation-snmp-configuration-archetype",
+    "archetypeVersion": "RELEASE",
+    "artifactId": "pmsdkexample-pm-mediation-snmp-configuration",
+    "cxpNumber": "CXP12345678",
+    "packageName": "ERICpmsdkexamplepmmediationsnmpconfiguration",
+    "nodeType": "PMSDKEXAMPLE",
+    "version": "1.0.1"
+  },
+  "node-model-common-archetype": {
+    "_targets": {
+      "models": [
+        "${artifactId}/${packageName}_${cxpNumber}/target/rpm/${packageName}_${cxpNumber}/RPMS/noarch"
+      ],
+      "uninstall": [
+      ]
+    },
+    "archetypeGroupId": "com.ericsson.oss.mediation.sdk",
+    "archetypeArtifactId": "node-model-common-archetype",
+    "archetypeVersion": "RELEASE",
+    "artifactId": "pmsdkexample-node-model-common",
+    "cxpNumber": "CXP12345677",
+    "packageName": "ERICpmsdkexamplenodemodelcommon",
+    "nodeType": "PMSDKEXAMPLE",
+    "version": "1.0.1"
+  },
+  "pm-node-model-common-archetype": {
+    "_targets": {
+      "models": [
+        "${artifactId}/${packageName}_${cxpNumber}/target/rpm/${packageName}_${cxpNumber}/RPMS/noarch"
+      ],
+      "uninstall": [
+      ]
+    },
+    "archetypeGroupId": "com.ericsson.oss.mediation.pm",
+    "archetypeArtifactId": "pm-node-model-common-archetype",
+    "archetypeVersion": "RELEASE",
+    "artifactId": "pmsdkexample-pm-node-model-common",
+    "cxpNumber": "CXP12345676",
+    "packageName": "ERICpmsdkexamplepmnodemodelcommon",
+    "nodeType": "PMSDKEXAMPLE",
+    "networkTransformerPhase": "process-sources",
+    "snmpNode": "true",
+    "version": "1.0.1"
+  },
+  "pm-mediation-router-policy-archetype": {
+    "_targets": {
+      "models": [
+        "${artifactId}/${artifactId}model/ERIC${artifactId}modelCXP12345674/target/rpm/ERIC${artifactId}model_CXP12345674/RPMS/noarch"
+      ],
+      "jboss": [
+        "${artifactId}/${artifactId}jgroups/ERIC${artifactId}jgroups${cxpNumber}/target/rpm/ERIC${artifactId}jgroups_${cxpNumber}/RPMS/noarch",
+        "${artifactId}/${artifactId}rules/ERIC${artifactId}rules${cxpNumber}/target/rpm/ERIC${artifactId}rules_${cxpNumber}/RPMS/noarch"
+      ],
+      "uninstall": [
+      ]
+    },
+    "archetypeGroupId": "com.ericsson.oss.mediation.pm",
+    "archetypeArtifactId": "pm-mediation-router-policy-archetype",
+    "archetypeVersion": "2.0.11",
+    "artifactId": "generic3pppmmediationrouterpolicy",
+    "cxpNumber": "CXP12345674",
+    "version": "1.0.1"
+  }
+}

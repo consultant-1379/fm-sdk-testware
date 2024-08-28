@@ -1,0 +1,10 @@
+productNumber: CXC 123 4567
+productRevision: PA01
+
+resources:
+  requests:
+    enabled: true
+    memory: 8096Mi
+  limits:
+    enabled: true
+    memory: 9192Mi

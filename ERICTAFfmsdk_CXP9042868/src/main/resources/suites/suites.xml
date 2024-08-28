@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SDK">
+    <test name="GenerateAndInstall">
+        <classes>
+<!--            <class name="com.ericsson.oss.mediation.sdk.fmsdktestware.FmSdkInstallTest"/>-->
+            <class name="com.ericsson.oss.mediation.sdk.sdktestware.SdkInstallAndVerifyTest"/>
+        </classes>
+    </test>
+</suite>

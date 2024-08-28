@@ -1,0 +1,5 @@
+{
+  "global_variable_1": "1",
+  "global_variable_2": "b",
+  "dps_persistence_provider": "{{ .Values.global.enmProperties.host_system_identifier }}"
+}

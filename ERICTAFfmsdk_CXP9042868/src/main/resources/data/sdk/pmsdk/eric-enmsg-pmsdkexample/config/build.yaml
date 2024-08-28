@@ -1,0 +1,10 @@
+eric-enm-pmsdk:
+  image-version: <Set via TAF>
+  image-repository: <Set via TAF>
+eric-enmsg-pmsdkexample:
+  image-version: 9.9.9-1
+  chart-version: 9.9.9-1
+  chart-description: "Helm chart for eric-enmsg-pmsdkexample chart (opptions)"
+eric-enm-monitoring-eap7:
+  image-version: <Set via TAF>
+  image-repository: <Set via TAF>

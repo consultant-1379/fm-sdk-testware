@@ -1,0 +1,111 @@
+{
+  "node-model-common-archetype": {
+    "_targets": {
+      "models": [
+        "${artifactId}/${packageName}_${cxpNumber}/target/rpm/${packageName}_${cxpNumber}/RPMS/noarch"
+      ],
+	  "uninstall": [
+      ]
+    },
+    "archetypeGroupId": "com.ericsson.oss.mediation.sdk",
+    "archetypeArtifactId": "node-model-common-archetype",
+    "archetypeVersion": "RELEASE",
+    "artifactId": "fmsdk-example-node-model-common",
+    "cxpNumber": "CXP123456",
+    "packageName": "ERICfmsdkexamplenodemodelcommon",
+    "version": "1.0.1",
+    "nodeType": "FMSDKEXAMPLE"
+  },
+  "node-mediation-configuration-archetype": {
+    "_targets": {
+      "models": [
+        "${artifactId}/${packageName}_${cxpNumber}/target/rpm/${packageName}_${cxpNumber}/RPMS/noarch"
+      ],
+      "uninstall": [
+      ]
+    },
+    "archetypeGroupId": "com.ericsson.oss.mediation.sdk",
+    "archetypeArtifactId": "node-mediation-configuration-archetype",
+    "archetypeVersion": "RELEASE",
+    "artifactId": "fmsdk-example-mediation-configuration",
+    "cxpNumber": "CXP123456",
+    "packageName": "ERICfmsdkexamplemediationconfiguration",
+    "version": "1.0.1",
+    "nodeType": "FMSDKEXAMPLE",
+    "flowNamespace": "GENERIC-3PP-SNMP"
+  },
+  "fm-target-destination-archetype": {
+    "_targets": {
+      "models": [
+        "${artifactId}/ERIC${targetdestflow}_${cxpNumberFlow}/target/rpm/ERIC${targetdestflow}_${cxpNumberFlow}/RPMS/noarch"
+      ],
+      "jboss": [
+        "${artifactId}/ERIC${targetdesthandler}_${cxpNumberHandler}/target/rpm/ERIC${targetdesthandler}_${cxpNumberHandler}/RPMS/noarch"
+      ],
+	  "uninstall": [
+      ]
+    },
+    "archetypeGroupId": "com.ericsson.oss.mediation.sdk",
+    "archetypeArtifactId": "fm-target-destination-archetype",
+    "archetypeVersion": "RELEASE",
+    "artifactId": "fmsdk-example-fm-target-destination",
+    "cxpNumberFlow": "CXP123456",
+    "cxpNumberHandler": "CXP123456",
+    "version": "1.0.1",
+    "nmSpace": "GENERIC-3PP-SNMP",
+    "sgCapability": "fmsdkexample",
+    "basePackage": "fmsdk-example-fm-target-destination",
+    "normalizedNmSpace": "fmsdkexample",
+    "targetdestflow": "fmsdkexampletargetdestflow",
+    "targetdesthandler": "fmsdkexampletargetdesthandler"
+  },
+  "additionalfmmediationservicetype-archetype": {
+    "_targets": {
+      "models": [
+        "${artifactId}/ERIC${packageName}_${CXP}/target/rpm/ERIC${packageName}_${CXP}/RPMS/noarch"
+      ],
+	  "uninstall": [
+      ]
+    },
+    "archetypeGroupId": "com.ericsson.oss.mediation.sdk",
+    "archetypeArtifactId": "additionalfmmediationservicetype-archetype",
+    "archetypeVersion": "RELEASE",
+    "artifactId": "fmsdk-example-additional-fm-mediation-service-type",
+    "packageName": "fmsdkexampleadditionalfmmediationservicetype",
+    "version": "1.0.1",
+    "CXP": "CXP123456",
+    "SGList": "fmsdkexample"
+  },
+  "fm-transformation-archetype": {
+    "_targets": {
+      "jboss": [
+        "${artifactId}/${packageName}_${cxpNumber}/target/rpm/${packageName}_${cxpNumber}/RPMS/noarch"
+      ]
+    },
+    "_copy": [
+      {
+        "file": [
+          "data/cfg/transformer-config.xml",
+          "${artifactId}/${artifactId}-jar/src/main/resources/transformer/transformer-config.xml"
+        ],
+        "update": {
+          "NODE_TYPE": "${nodeType}"
+        }
+      }
+    ],
+    "archetypeGroupId": "com.ericsson.oss.mediation.sdk",
+    "archetypeArtifactId": "fm-transformation-archetype",
+    "archetypeVersion": "RELEASE",
+    "artifactId": "fmsdk-example-fm-transformation",
+    "cxpNumber": "CXP123456",
+    "version": "1.0.1",
+    "snmpTrapPort": "162",
+    "HeartbeatMode": "PULL",
+    "NEVersion": "1.0.0",
+    "basePackage": "fmsdk-example-fm-transformation",
+    "packageName": "ERICfmsdkexamplefmtransformation",
+    "neTypeLow": "fmsdkexample",
+    "nodeType": "fmsdkexample",
+    "neTypeUpper": "FMSDKEXAMPLE"
+  }
+}

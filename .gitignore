@@ -1,0 +1,49 @@
+# Compiled source #
+*.class
+*/bin/*
+
+# Eclipse files
+.project
+.classpath
+.settings
+.metadata
+
+# IntelliJ IDEA files
+.idea
+*.iws
+*.ipr
+*.iml
+*.log
+
+# Test output files
+*/test-output/*
+/test-output/
+/test-output
+test-output/
+test-output/**/*
+*/test-output/**/*
+*.pem
+
+# Packages
+*.jar
+
+# Maven build files
+target
+reports
+application.properties
+avs-rest-service/application.properties
+
+
+# PMD
+.pmd
+
+# Merge files
+*.orig
+
+#tmp irectories
+tmp/
+test-output/
+
+# Windows binaries
+*.exe
+*.dll
